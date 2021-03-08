@@ -4,5 +4,5 @@
 
 * __*Baekjoon*__ : [dj035](http://icpc.me/dj035)
 * __*SolvedAC*__ : [dj035](https://solved.ac/profile/dj035)
-* __*Codeforces*__ : [dynami](https://codeforces.com/profile/dynami) [![](https://run.kaist.ac.kr/badges/codeforces/djayy035_.svg)](https://codeforces.com/profile/djayy035_)
+* __*Codeforces*__ : [dynami](https://codeforces.com/profile/dynami) [![](https://run.kaist.ac.kr/badges/codeforces/dynami.svg)](https://codeforces.com/profile/dynami)
 
