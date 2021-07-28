@@ -25,7 +25,7 @@ ll limf(ll k){
     ll l=2, r=(1LL<<45);
     while(l<=r){
         ll mid = (l+r)/2LL;
-        if(k*log(mid)+1e-9>log((1LL<<63)-1)) r = mid-1;
+        if(k*log(mid)>log((1LL<<63)-1)) r = mid-1;
         else l = mid+1;
     }
     return r;
@@ -62,4 +62,5 @@ main(){
         a[i] = limf(i);
     cout << DP(n);
 }
+
 
