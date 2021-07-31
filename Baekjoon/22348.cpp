@@ -34,5 +34,5 @@ int main(){
     		ans = (ans+(n>=p-m ? (s[i][n]-(p-m>0 ? s[i][p-m-1]:0)+MOD)%MOD:0))%MOD;
     	}
     	cout << ans <<'\n';
-	}
+    }
 }
