@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 #define ll long long
-#define MEM 1000005
+#define MEM 500025
 #define x first
 #define y second
 #define sz size()
@@ -32,16 +32,36 @@ ll mul(ll a, ll b)
 {
     return ((a * b) % MOD + MOD) % MOD;
 }
-ll n,k,o=1;
+ll chk(ll n)
+{
+    ll o = n, p = 7;
+    while (o > 0)
+    {
+        if (o % 10 <= 7)
+            p = min(p, (7LL - o % 10));
+        o /= 10;
+    }
+    return p;
+}
+ll t, n, m, k, l;
+string s;
+ll a[MEM];
 main()
 {
     cin.tie(0);
     cout.tie(0);
     ios::sync_with_stdio(0);
-    cin >> n;
-    for(int i=0; i<n; i++){
-        cin >> k;
-        if(k==o) o++;
+    cin >> t;
+    while (t--)
+    {
+        cin >> n;
+        ll ans = 7;
+        for (ll i = 0; i < 7; i++)
+        {
+            if (chk(n) <= i)
+                ans = min(ans, i);
+            n--;
+        }
+        cout << ans << '\n';
     }
-    cout << (n-o+1);
 }
